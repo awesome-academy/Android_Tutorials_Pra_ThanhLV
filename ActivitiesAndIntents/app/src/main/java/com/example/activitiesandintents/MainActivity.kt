@@ -7,36 +7,37 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.activitiesandintents.constant.Constants
+import com.example.activitiesandintents.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        setTitle("Two Activities")
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setTitle(R.string.main_activity_title)
 
-        val mReply = findViewById<TextView>(R.id.tv_reply)
-        val mEdtMessage = findViewById<EditText>(R.id.edt_message)
-        val mBtnSend = findViewById<Button>(R.id.btn_send)
-
-        mReply.text = getData()
-        mBtnSend.setOnClickListener {
-            val strMessage = mEdtMessage.text.toString()
+        binding.tvReply.text = getData()
+        binding.btnSend.setOnClickListener {
+            val strMessage = binding.edtMessage.text.toString()
             sendData(strMessage)
         }
     }
 
     fun getData(): String? {
         val bundle = intent.extras
-        val message = bundle?.getString("reply")
+        val message = bundle?.getString(Constants.REPLY_KEY)
         return message
     }
 
 
     fun sendData(strMessage: String) {
         val bundle = Bundle()
-        bundle.putString("message", strMessage)
+        bundle.putString(Constants.MESSAGE_KEY, strMessage)
         val intent = Intent(this, SecondActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)

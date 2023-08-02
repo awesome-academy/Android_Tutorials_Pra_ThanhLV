@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="@dimen/define_dimen_10"
     tools:context=".MainActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="Message Reply"
-            android:textSize="22dp"
+            android:text="@string/message_reply"
+            android:textSize="@dimen/define_dimen_22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
-            android:text="This is the reply"
+            android:text="@string/this_is_the_reply"
             android:id="@+id/tv_reply"
-            android:textSize="18dp"
+            android:textSize="@dimen/define_dimen_18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>

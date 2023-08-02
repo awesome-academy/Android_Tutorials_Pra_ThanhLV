@@ -6,33 +6,34 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.activitiesandintents.constant.Constants
+import com.example.activitiesandintents.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySecondBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
-        setTitle("Second Activities")
+        binding = ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setTitle(R.string.second_activity_title)
 
-        val mMessage = findViewById<TextView>(R.id.tv_message)
-        val mEdtReply = findViewById<EditText>(R.id.edt_reply)
-        val mBtnReply = findViewById<Button>(R.id.btn_reply)
-
-        mMessage.text = getData()
-        mBtnReply.setOnClickListener{
-            val strReply = mEdtReply.text.toString()
+        binding.tvMessage.text = getData()
+        binding.btnReply.setOnClickListener {
+            val strReply = binding.edtReply.text.toString()
             sendData(strReply)
         }
     }
 
     fun getData(): String? {
         val bundle = intent.extras
-        val message = bundle?.getString("message")
+        val message = bundle?.getString(Constants.MESSAGE_KEY)
         return message
     }
 
     fun sendData(strReply: String) {
         val bundle = Bundle()
-        bundle.putString("reply", strReply)
+        bundle.putString(Constants.REPLY_KEY, strReply)
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)

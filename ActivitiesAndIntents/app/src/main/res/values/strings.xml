@@ -3,4 +3,15 @@
     <string name="send">SEND</string>
     <string name="reply">REPLY</string>
     <string name="enter_your_message_here">Enter your message here</string>
+    <string name="message_received">Message Received</string>
+    <string name="this_is_the_message">This is the message</string>
+    <string name="enter_your_reply_here">Enter your reply here</string>
+    <string name="message_reply">Message Reply</string>
+    <string name="this_is_the_reply">This is the reply</string>
+
+
+    <string name="main_activity_title">Two Activities</string>
+    <string name="second_activity_title">Second Activities</string>
+
+
 </resources>
