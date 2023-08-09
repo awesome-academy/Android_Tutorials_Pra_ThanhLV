@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/webUrlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập URL trang web mở"
+        android:text="https://www.example.com" />
+
+    <Button
+        android:id="@+id/openWebButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mở trang web" />
+
+    <EditText
+        android:id="@+id/mapLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập vị trí trên bản đồ mở"
+        android:text="10.773084,106.685165" />
+
+    <Button
+        android:id="@+id/openMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mở vị trí trên bản đồ" />
+
+    <EditText
+        android:id="@+id/shareTextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập văn bản để chia sẻ"
+        android:text="Hello, this is a shared text!" />
+
+    <Button
+        android:id="@+id/shareTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chia sẻ văn bản" />
+
+</LinearLayout>
