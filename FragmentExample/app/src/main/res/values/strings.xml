@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FragmentExample</string>
+    <string name="content">Thoả sức chụp ảnh, quay video chuyên nghiệp - Camera đến 200MP, chế độ chụp đêm cải tiến, bộ xử lí ảnh thông minh Chiến game bùng nổ - chip Snapdragon 8 Gen 2 8 nhân tăng tốc độ xử lí, màn hình 120Hz, pin 5.000mAh Nâng cao hiệu suất làm việc với Siêu bút S Pen tích hợp, dễ dàng đánh dấu sự kiện từ hình ảnh hoặc video Thiết kế bền bỉ, thân thiện - Màu sắc lấy cảm hứng từ thiên nhiên, chất liệu kính và lớp phim phủ PET tái chế</string>
+    <string name="title">Samsung Galaxy S23 Ultra 256GB</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="like_the_article">Like the article?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="article">Article:</string>
+    <string name="article_like">Article: Like</string>
+    <string name="article_thanks">Article: Thanks</string>
+
+</resources>
