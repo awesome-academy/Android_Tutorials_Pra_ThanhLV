@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Implicitlntent</string>
+    <string name="nh_p_url_trang_web_m">Nhập URL trang web mở</string>
+    <string name="https_developer_android_com">https://developer.android.com</string>
+    <string name="m_trang_web">Mở trang web</string>
+    <string name="nh_p_v_tr_tr_n_b_n_m">Nhập vị trí trên bản đồ mở</string>
+    <string name="_10_773084_106_685165">10.773084,106.685165</string>
+    <string name="m_v_tr_tr_n_b_n">Mở vị trí trên bản đồ</string>
+    <string name="nh_p_v_n_b_n_chia_s">Nhập văn bản để chia sẻ</string>
+    <string name="hello_this_is_a_shared_text">Hello, this is a shared text!</string>
+    <string name="chia_s_v_n_b_n">Chia sẻ văn bản</string>
+</resources>

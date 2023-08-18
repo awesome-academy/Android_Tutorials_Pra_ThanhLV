@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/define_dimen_16"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/webUrlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_url_trang_web_m"
+        android:text="@string/https_developer_android_com" />
+
+    <Button
+        android:id="@+id/openWebButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_trang_web" />
+
+    <EditText
+        android:id="@+id/mapLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_v_tr_tr_n_b_n_m"
+        android:text="@string/_10_773084_106_685165" />
+
+    <Button
+        android:id="@+id/openMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_v_tr_tr_n_b_n" />
+
+    <EditText
+        android:id="@+id/shareTextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_v_n_b_n_chia_s"
+        android:text="@string/hello_this_is_a_shared_text" />
+
+    <Button
+        android:id="@+id/shareTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chia_s_v_n_b_n" />
+
+</LinearLayout>
